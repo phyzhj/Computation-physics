@@ -1,4 +1,4 @@
 program first 
-	write(*,*) "hello world"
+	write(*,*) "hello"
 	stop
 end
