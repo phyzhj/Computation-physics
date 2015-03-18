@@ -5,7 +5,7 @@ program lissajous
 	real,parameter::pi=3.14159
 	real::w1,w2,phi1,phi2,t 
 !-----------------------------------------------
-    open(unit=10,file='lissajous.txt')
+    open(unit=10,file='lissajous.dat')
     read(*,*) w1,w2,phi1,phi2
     do i=1,m
     	t=2*pi*i/m
