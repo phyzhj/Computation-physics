@@ -11,5 +11,5 @@ program lissajous
     	t=2*pi*i/m
     	write(10,*) cos(w1*t+phi1)," ",cos(w2*t+phi2)
     end do
-    close(10)	
-end 
+    close(10)
+end
