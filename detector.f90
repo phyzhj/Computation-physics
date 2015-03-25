@@ -24,7 +24,8 @@ subroutine lagr(x0,y0,n,x,y)
 	do i=1,n
 		p=1.0
 		do j=1,n
-			if (i/=j) p=p*(x-x0(j))/(x0(i)-x0(j))
+			if (i==j) cycle
+			p=p*(x-x0(j))/(x0(i)-x0(j))
 		end do 
 		y=y+p*y0(i)
 	end do
